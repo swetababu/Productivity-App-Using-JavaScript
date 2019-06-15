@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Add Contact - Contact List | JavaScript Group Project - 1 </title>
+
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
+    <link rel="stylesheet" href="css/style.css">                                      
+
+</head>
+
+    <body>
+       
+        <div class="tm-header">
+            <div class="container-fluid">
+                <div class="tm-header-inner">
+                    <a href="#" class="navbar-brand tm-site-name">CONTACT LIST</a>
+                    
+                    <!-- navbar -->
+                    <nav class="navbar tm-main-nav">
+
+                        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                            &#9776;
+                        </button>
+                        
+                        <div class="collapse navbar-toggleable-sm" id="tmNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a href="add-contact.html" class="nav-link">Add Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="view-contact.html" class="nav-link">View Contact</a>
+                                </li>
+                               
+                            </ul>                        
+                        </div>
+                        
+                    </nav>  
+
+                </div>                                  
+            </div>            
+        </div>
+
+       
+
+        <section class="tm-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h2 class="tm-gold-text tm-title">Kindly fill all the fields below to add a contact!</h2>
+                       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <form class="tm-contact-form" id="contacts-form">                                
+                                <div class="form-group">
+                                    <label>First Name: </label>
+                                    <input type="text" id="contact_fname" name="contact_name" class="form-control" placeholder="First Name" required="">
+                                </div>
+                              <div class="form-group">
+                                  <label>Last Name: </label>
+                                    <input type="text" id="contact_lname" name="contact_name" class="form-control" placeholder="Last Name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email: </label>
+                                    <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone: </label>
+                                    <input type="text" id="contact_phone" name="contact_subject" class="form-control" placeholder="Phone" required="">
+                                </div>
+                             <div class="form-group">
+                                 <label>Birthday: </label>
+                                    
+                                    <input type="date" id="contact_bday" name="contact_subject" class="form-control" placeholder="Birthday" required="">
+                                </div>
+                                
+                                <button type="submit" id="submit" class="tm-btn">Add Contact</button>  <button type="reset" class="tm-btn">Reset</button>                       <input type="hidden" name="id_entry" value="0" />   
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        
+        
+       
+        <footer class="tm-footer">
+            <div class="container-fluid">
+               
+                <div class="row">
+                    <div class="col-xs-12 tm-copyright-col">
+                        <p class="tm-copyright-text">
+                        Vaibhavi More (8254385) &amp; Sweta Gupta (8252397) &amp; Sukhwinder Singh (8243180)
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/main.js"></script>
+<!--        <script src="js/bootstrap.min.js"></script>                 -->
+       
+</body>
+</html>
